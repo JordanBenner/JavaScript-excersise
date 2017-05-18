@@ -93,3 +93,15 @@ function printBox(width, height){
 
 }
 printBox(6, 4)
+
+// Print Banner //
+
+function printBanner(text){
+  var rowOfStars = "*" .repeat(text.length + 4);
+  var middleRow =  "* "+ text + " *\n";
+  var wholeBanner = rowOfStars + '\n' + middleRow + rowOfStars;
+  console.log(wholeBanner);
+}
+printBanner("Welcome To Digital Crafts!")
+
+//

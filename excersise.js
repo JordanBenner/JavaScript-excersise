@@ -6,8 +6,8 @@ function hello(name){
 }
 
 // Hello, you! Part2//
-function hello(name){
-  console.log('Hello', name);
+function hello(){
+  console.log('Hello world!');
 }
 
 // Madlib//

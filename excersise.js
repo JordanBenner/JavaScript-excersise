@@ -14,6 +14,4 @@ function hello(){
 function madlib(name, subject){
   let output = name + 'favorite subject in school is' + subject;
   return output;
-
-  }
-console.log("name/s ", )
+}

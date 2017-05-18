@@ -56,3 +56,20 @@ function splitAmount(bill, service, amount){
   }
 }
 splitAmount(100, 'good', 3)
+
+// Print Numbers //
+
+//while loop //
+count = 0
+while (count < 10) {
+  count += 1;
+  console.log(count);
+}
+
+// for loop //
+function printNumbers(){
+  for (var count=0; count < 10; count++) {
+  console.log(count);
+}
+}
+printNumbers()

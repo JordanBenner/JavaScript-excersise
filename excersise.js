@@ -81,3 +81,15 @@ function printSquare(size){
     console.log('*'.repeat(size));
   }
 }
+
+// Print a box //
+
+function printBox(width, height){
+  var rowOfStars = '*' .repeat(width);
+  var middleRow = "*" + " ".repeat(width - 2) + "*\n";
+  var middle = middleRow.repeat(height -2);
+  var theWholeBox = rowOfStars + '\n' + middle + rowOfStars;
+  console.log(theWholeBox);
+
+}
+printBox(6, 4)

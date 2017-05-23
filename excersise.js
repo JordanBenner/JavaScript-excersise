@@ -105,20 +105,14 @@ function printBanner(text){
 printBanner("Welcome To Digital Crafts!")
 
 // Factor A Number //
-function factors(number)
-{
- var num_factors = [], i;
-
- for (i = 1; i <= Math.floor(Math.sqrt(number)); i += 1)
-  if (number % i === 0)
-  {
-   num_factors.push(i);
-   if (number / i !== i)
-    num_factors.push(number / i);
-  }
- num_factors.sort(function(x, y)
-   {
-     return x - y;});
-     return num_factors;
+function factor(number){
+  let factors = [];
+  for(let i = 1; i<=number; i++){
+    if(number%i == 0){
+      factors.push(i);
+    }else{
+      continue;
     }
-console.log(factors(15));
+  }
+  return(factors);
+}

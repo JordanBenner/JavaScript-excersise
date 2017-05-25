@@ -83,3 +83,31 @@ class Person {
 
 var Jordan = new Person();
 Jordan.addFriend('bob');
+
+//these thises 2 //
+
+class Person {
+  constructor(name){
+    this.name = name;
+    this.friends = [];
+  }
+
+  createGreetingForFriends(other) {
+    return 'Yo ' + other.name + '! from ' + this.name + '.';
+  }
+
+  addFriend (friend) {
+    this.friends.push(friend);
+  }
+
+  greet(other) {
+  console.log(this.createGreetingForFriends(other));
+  }
+};
+
+var alfie = new Person('Alfie');
+var anushka = new Person('Anushka');
+var henrique = new Person('Henrique');
+alfie.addFriend(anushka);
+alfie.addFriend(henrique);
+// alfie.createGreetingsForFriends();

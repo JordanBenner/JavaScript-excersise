@@ -43,14 +43,21 @@ class Person {
     this.name = name;
     this.friends = [];
   }
+
+  createGreeting(other) {
+    return 'Yo ' + other.name + '! from ' + this.name + '.';
+  }
+
+  addFriend (friend) {
+    this.friends.push(friend);
+  }
+
   greet(other) {
-    console.log('Yo ' + other.name + '! from ' + this.name + '.')
+  console.log(this.createGreeting(other));
   }
-}
-class Friend extends Person {
-  friend(){
-    console.log(this.friends.push(friend));
-  }
-}
-var f = new Friend('Jordan');
-f.friend();
+};
+
+var Jordan = new Person();
+Jordan.addFriend('bob');
+
+// these thises //

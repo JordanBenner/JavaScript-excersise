@@ -61,3 +61,25 @@ var Jordan = new Person();
 Jordan.addFriend('bob');
 
 // these thises //
+
+class Person {
+  constructor(name){
+    this.name = name;
+    this.friends = [];
+  }
+
+  lazyGreet(other) {
+    this.setTimeout(other);
+  }
+
+  addFriend (friend) {
+    this.friends.push(friend);
+  }
+
+  setTimeout(other) {
+  console.log('Yo ' + other.name + '! from ' + this.name + '.');
+  }
+};
+
+var Jordan = new Person();
+Jordan.addFriend('bob');

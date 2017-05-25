@@ -69,19 +69,22 @@ class Person {
   }
 
   lazyGreet(other) {
-    this.setTimeout(other);
+    setTimeout(
+      () => {
+        this.greet(other)
+      }, 2000);
   }
 
   addFriend (friend) {
     this.friends.push(friend);
   }
 
-  setTimeout(other) {
+  greet(other) {
   console.log('Yo ' + other.name + '! from ' + this.name + '.');
   }
 };
 
-var Jordan = new Person();
+var Jordan = new Person('Jordan');
 Jordan.addFriend('bob');
 
 //these thises 2 //
@@ -93,7 +96,7 @@ class Person {
   }
 
   createGreetingForFriends(other) {
-    return 'Yo ' + other.name + '! from ' + this.name + '.';
+    return 'Yo ' + other.name + '! from ' + this.name + ',' + 'Yo ' + other.name + 'from ' + this.name '.';
   }
 
   addFriend (friend) {
